@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TheBalticSea</title>
+  </head>
+  <style>
+    .container {
+      background-image: linear-gradient(
+        114.3deg,
+        rgb(19, 126, 57) 0.2%,
+        rgb(8, 65, 91) 68.5%
+      );
+      border-radius: 15px;
+      width: 70%;
+      padding: 15px 60px;
+      margin: 0px auto;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+      color: #ffffff;
+    }
+    h2 {
+      text-align: center;
+      border: 1px solid;
+      padding: 15px;
+      font-size: 20px;
+      color: #ffffff;
+      border-radius: 10px;
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    p {
+      line-height: 1.5;
+      font-size: 20px;
+      color: #ffffff;
+      text-align: justify;
+    }
+
+    button {
+      display: block;
+      margin: auto;
+      background: #0e6547;
+      color: #ffffff;
+      font-size: 20px;
+      font-weight: 600;
+      padding: 20px 40px;
+      border: none;
+      border-radius: 30px;
+      box-shadow: 5px 5px 10px rgba(3, 15, 32, 0.3);
+      transition: all 200ms ease-in-out;
+    }
+
+    button:hover {
+      opacity: 0.9;
+      cursor: pointer;
+    }
+    .footer {
+      font-size: 17px;
+      color: #ffffff;
+      text-align: center;
+      padding: 10px;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 30px 60px;
+    }
+
+    .introduction {
+      font-style: italic;
+      font-weight: 600;
+    }
+    .learn-more {
+      display: block;
+      color: #ffffff;
+      margin-top: 10px;
+      font-size: 15px;
+      text-decoration: none;
+    }
+    .learn-more:hover {
+      text-decoration: underline;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>I 💚 NATURE</h1>
+      <h2>The Baltic Sea: <em>A Jewel of Northern Europe</em></h2>
+      <p>
+        <span class="introduction">The Baltic Sea</span>, nestled in the heart
+        of Northern Europe, is a stunning and historically rich body of water
+        that connects nine countries, including Sweden, Finland, Denmark,
+        Germany, and the Baltic States — Estonia, Latvia, and Lithuania. This
+        brackish inland sea is renowned for its unique blend of natural beauty
+        and cultural significance. Surrounded by picturesque landscapes, the
+        Baltic Sea boasts a diverse ecosystem, home to a myriad of species. Its
+        shores are dotted with charming coastal towns, each with its own
+        distinct character and cultural heritage. The sea itself is a vital
+        transportation route, fostering trade and cultural exchange throughout
+        the region's history.
+      </p>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/106/655/original/baltic-sea-coast-latvia-travel.jpg?1702210939"
+      />
+      <hr />
+      <a
+        class="learn-more"
+        href="https://en.wikipedia.org/wiki/Baltic_Sea"
+        target="_blank"
+      >
+        Lear more on Wikipedia
+      </a>
+      <br />
+      <button class="visit-button">VISIT THE BALTIC SEA</button>
+      <p class="footer">This page was build by <strong>Santa Duda</strong></p>
+    </div>
+    <script>
+      function visit() {
+        let name = prompt("What is your name?");
+        if (name) {
+          alert(
+            "Thank you, " +
+              name +
+              "! We will be in touch, meanwhile enjoy the nature around you!🐸"
+          );
+        } else {
+          alert("No name 🙃 anyway you are very welcome to visit!🐟");
+        }
+      }
+
+      let visitButton = document.querySelector(".visit-button");
+      visitButton.addEventListener("click", visit);
+    </script>
+  </body>
+</html>
